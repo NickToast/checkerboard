@@ -21,5 +21,15 @@ def checkerboard_x_y_color1(x, y, color1):
 def checkerboard_x_y_color1_color2(x, y, color1, color2):
     return render_template('index.html', x=x, y=y, color_one=color1, color_two=color2)
 
+#shorten all these we can stack them and have a default checkerboard
+# @app.route('/')
+# @app.route('/<int:x>')
+# @app.route('/<int:x>/<int:y>')
+# @app.route('/<int:x>/<int:y>/<string:color1>')
+# @app.route('/<int:x>/<int:y>/<string:color1>/<string:color2>')
+# def default_checkerboard(x=8, y=8, color1='red', color2='black'):
+#     return render_template(x=x, x=y, color_one=color1, color_two=color2)
+
+
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
     app.run(debug=True)    # Run the app in debug mode.
